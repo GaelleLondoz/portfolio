@@ -1,0 +1,71 @@
+.container-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $light-gray;
+  height: 100%;
+
+}
+.container-general {
+  max-width: 850px;
+}
+
+.photo-profil {
+  text-align: center;}
+
+  .photo{
+    width: 30%;
+    border-radius: 50%;
+  }
+
+  .text-about {
+    margin: 18px;
+  }
+
+  p.text-about-me {
+    font-size: 18px;
+  }
+
+  .button-cv {
+    background: $gray ;
+    color: white;
+    padding: 17px;
+    font-size: 20px;
+    text-transform: uppercase;
+    width: 158px;
+    text-align: center;
+    margin: 50px auto;
+    transition: background-color 0.5s;
+
+    a{
+      text-decoration: none;
+      color: white;
+    }
+
+    &:hover{
+
+      background: $downy;
+    }
+
+  }
+
+  @media only screen
+  and (min-width: 320px)
+  and (max-width: 599px)    {
+    .photo{
+      width: 57%;
+    }
+
+    p.text-about-me {
+      font-size: 16px;}
+
+
+      .sticky{
+        height: 100% !important;}
+
+        .container-general  {
+
+          height: 100% !important;
+          margin: 50px 0;
+        }
+      }

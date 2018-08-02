@@ -1,0 +1,258 @@
+  .container-more-about-me {
+    background: $green;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 50px 0 39px 0;
+    height: 100vh;
+
+.container-general {
+  max-width: 960px;
+}
+    .flex-more-about {
+      width: 960px;
+      display: flex;
+      justify-content: space-between;
+
+    }
+
+    .left-section {
+      width: 50%;
+      p {
+        margin: 0;
+        line-height: 1.3;
+      }
+    }
+
+    h2.titles {
+      margin-left: 0;
+      margin-bottom: 100px;
+    }
+
+
+
+  }
+
+  p.date {
+    font-size: 18px;
+    color: white;
+  }
+  p.title-education {
+    font-weight: bold;
+    font-size: 20px;
+    color: #3C6071;
+  }
+  p.location {
+    margin-bottom: 61px !important;
+    font-size: 18px;
+    color: white;
+  }
+  @media only screen
+  and (min-width: 768px)
+  and (max-width: 1024px)    {
+    .photo{
+      width: 30%;
+    }
+
+  }
+
+
+
+
+  .right-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    width: 300px;
+    margin: 0;
+    position: relative;
+    float: left;
+    font-size: 12px;
+    line-height: 2em;
+  }
+
+
+  #skill{
+    list-style: none;
+    padding: 0;
+    li{
+      background-color: #3c6071;
+      height: 10px;
+      border-radius: 5px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .expand{
+    height: 10px;
+    background-color: #eee;
+    position: absolute;
+    border-radius: 5px 0 0 5px;
+
+  }
+
+  .html-css{
+    width: 80%;
+    -webkit-animation: html-css 2s ease-out;
+    width: 80%;
+  }
+
+  .ruby{
+    width: 60%;
+    -webkit-animation: ruby 2s ease-out;
+    width: 60%;
+  }
+
+  .ruby-on-rails{
+    width: 65%;
+    -webkit-animation: ruby-on-rails 2s ease-out;
+    width: 65%;
+  }
+
+  .javascript{
+    width: 50%;
+    -webkit-animation: javascript 2s ease-out;
+    width: 50%;
+  }
+
+  .photoshop{
+    width: 80%;
+    -webkit-animation: photoshop 2s ease-out;
+    width: 80%;
+  }
+
+  .illustrator{
+    width: 75%;
+    -webkit-animation: illustrator 2s ease-out;
+    width: 75%;
+  }
+
+
+  .flex-skills-texts {
+    display: flex;
+    position: relative;
+    top: 10px;
+    justify-content: space-between;
+    width: 300px;
+    color: #3c6071;
+    font-size: 16px;
+  }
+
+
+  @-webkit-keyframes html-css{
+    0%{
+      width: 0px;
+    }
+
+    100%{
+      width:80%;
+    };
+  }
+
+  @-webkit-keyframes ruby{
+    0%{
+      width: 0px;
+    }
+
+    100%{
+      width:60%;
+    };
+  }
+
+  @-webkit-keyframes ruby-on-rails{
+    0%{
+      width: 0px;
+    }
+
+    100%{
+      width:65%;
+    };
+  }
+
+  @-webkit-keyframes javascript{
+    0%{
+      width: 0px;
+    }
+
+    100%{
+      width:50%;
+    };
+  }
+
+  @-webkit-keyframes photoshop{
+    0%{
+      width: 0px;
+    }
+
+    100%{
+      width:80%;
+    };
+  }
+
+  @-webkit-keyframes illustrator{
+    0%{
+      width: 0px;
+    }
+
+    100%{
+      width:75%;
+    };
+  }
+  @media only screen
+  and (min-width: 768px)
+  and (max-width: 1024px)  {
+
+
+    .container-more-about-me .container-general {
+      max-width: 100vw;
+    }
+
+    .container-more-about-me .flex-more-about {
+      max-width: 100vw;
+      justify-content: center;
+    }
+
+    .container-more-about-me .left-section {
+    width: 57%;
+}
+  }
+  @media screen
+  and (max-width: 767px){
+    .container-more-about-me .flex-more-about {
+      flex-wrap: wrap;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      .left-section {
+
+        width: 100vw;
+        margin: 0px 18px;
+
+      }
+
+    }
+
+
+    .right-section {
+
+      width: 100vw;
+      margin: 0px 18px}
+
+      .container-more-about-me h2.titles {
+        margin: 0px auto 61px auto;
+      }
+
+
+      .content {
+        width: 100%;
+
+      }
+
+
+      .flex-skills-texts {
+
+        width: 100%;}
+
+      }

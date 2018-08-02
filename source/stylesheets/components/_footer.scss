@@ -1,0 +1,70 @@
+
+.footer-portfolio {
+  background: #333;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+
+  .footer-icons {
+    width: 10vw;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  a.back-button {
+    color: white;
+    transition: color $duration;
+    &:hover{
+      color: $downy;
+      text-decoration: none;
+    }
+  }
+
+  i {
+    font-size: 45px;
+  }
+
+  i.fab.fa-linkedin-in {
+    background: white;
+    width: 45px;
+    height: 45px;
+    font-size: 21px;
+    border-radius: 50%;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background $duration;
+    &:hover{
+      background: $downy;
+    }
+  }
+}
+
+
+
+
+@media only screen
+and (min-width: 320px)
+and (max-width: 767px)  {
+
+  .footer-portfolio .footer-icons {
+    width: 32vw;}
+
+
+
+  }
+
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px)  {
+
+  .footer-portfolio .footer-icons {
+    width: 16vw;}
+
+  }
+
+

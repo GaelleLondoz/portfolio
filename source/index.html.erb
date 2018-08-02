@@ -1,15 +1,210 @@
----
-title: Le Wagon - Middleman
----
+<div class="header sticky">
+  <div class="green-bloc ">
 
-<div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
+    <div class="title-portolio">
+      <p class="subtitle name">Gaëlle Londoz</p>
+      <h1>Port<span>folio</span></h1>
+      <p class="subtitle job">Front End Developper</p>
+    </div>
+
   </div>
 </div>
+
+<div class="container-about sticky">
+  <div class="container-general">
+    <div class="text-about">
+      <div class="photo-profil">
+        <%= image_tag "gaellelondoz.png", class:"photo"%>
+      </div>
+      <h2 class="titles">About me</h2>
+
+      <p class="text-about-me">I'm Gaëlle Londoz, I'm 26 years old. I live in Brussels.
+      Curious, perfectionist and self-taught, I am passionate about front end web development, the management of web projects, web design and graphic design. I did a coding Bootcamp in Montreal and I am graduated in publishing practice and in e-business. My training allowed me to develop skills in graphic design, e-commerce, e-marketing and web development.</p>
+
+      <div class="button-cv">
+        <%= link_to 'My resume', '../images/GaelleLondoz-CV.pdf', download: 'GaelleLondoz-Resume', class: 'download-button' %>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="container-more-about-me sticky">
+  <div class="container-general">
+    <div class="flex-more-about">
+      <div class="left-section">
+        <h2 class="titles">Education</h2>
+
+        <p class="date">APRIL - JUNE  2018</p>
+        <p class="title-education">Coding Bootcamp</p>
+        <p class="location">Le Wagon, Canada</p>
+
+        <p class="date">2014-2017</p>
+        <p class="title-education">Bachelor’s degree in E-business</p>
+        <p class="location">EPHEC, Belgium</p>
+        <p class="date">2011-2014</p>
+        <p class="title-education">Bachelor’s degree in Publishing Practice</p>
+        <p class="location">Francisco Ferrer, Belgium</p>
+      </div>
+
+      <div class="right-section">
+        <h2 class="titles">Skills</h2>
+        <div class="content">
+          <ul id="skill">
+            <li>
+              <span id="html-css" class="expand"></span>
+              <div class="flex-skills-texts">
+                <div class="skills-name">HTML / CSS</div>
+                <div class="skills-pct">80%</div>
+              </div>
+            </li>
+
+            <li>
+              <span id="ruby" class="expand"></span>
+              <div class="flex-skills-texts">
+                <div class="skills-name">RUBY</div>
+                <div class="skills-pct">60%</div>
+              </div>
+            </li>
+
+            <li>
+              <span id="ruby-on-rails" class="expand"></span>
+              <div class="flex-skills-texts">
+                <div class="skills-name">RUBY ON RAILS</div>
+                <div class="skills-pct">65%</div>
+              </div>
+            </li>
+
+            <li>
+              <span id="javascript" class="expand"></span>
+              <div class="flex-skills-texts">
+                <div class="skills-name">JAVASCRIPT</div>
+                <div class="skills-pct">50%</div>
+              </div>
+            </li>
+
+            <li>
+              <span id="photoshop" class="expand"></span>
+              <div class="flex-skills-texts">
+                <div class="skills-name">PHOTOSHOP</div>
+                <div class="skills-pct">80%</div>
+              </div>
+            </li>
+
+            <li>
+              <span id="illustrator" class="expand"></span>
+              <div class="flex-skills-texts">
+                <div class="skills-name">ILLUSTRATOR</div>
+                <div class="skills-pct">75%</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="works-about sticky">
+  <div class="container-work">
+    <h2 class="titles">Works</h2>
+    <div class="cards">
+      <div class="card">
+        <a href="https://cocktails-book-app.herokuapp.com/" target="_blank">
+        <header class="card_thumb">
+           <%= image_tag "cocktails.png", class:"photo-work" %>
+        </header>
+
+        <div class="card_body">
+          <h3 class="card_title">
+            Cocktail book
+          </h3>
+          <div class="card_subtitle">
+            All your favorite cocktail recipes
+          </div>
+          <p class="card_description">
+            This project was one of many challenges made during the Coding Bootcamp "Le Wagon".
+            This app allows you to create new cocktails and import photos of them, add ingredients and comments.<br>
+            This site has been developed using mainly Ruby on Rails, CRUD and MVC architecture.
+          </p>
+          <!-- <footer class="card-footer">
+            <span class="icon icon-html"><%= image_tag "html.svg" %></span>
+            <span class="icon icon-css"><%= image_tag "css.svg" %></span>
+            <span class="icon icon-javascript"><%= image_tag "js.svg" %></span>
+            <span class="icon icon-ruby"><%= image_tag "ruby.svg" %></span>
+            <span class="icon icon-rubyonrails"><%= image_tag "ruby-on-rails.svg" %></span>
+          </footer> -->
+        </div>
+        </a>
+      </div>
+
+
+
+      <div class="card">
+        <a href="http://www.agapay.me/" target="_blank">
+        <header class="card_thumb">
+           <%= image_tag "agapay.png", class:"photo-work"%>
+        </header>
+        <div class="card_body">
+          <h3 class="card_title">
+            Agapay
+          </h3>
+          <div class="card_subtitle">
+            Give. Differently.
+          </div>
+          <p class="card_description">
+
+            Agapay is the final project of the coding Bootcamp "Le Wagon".
+            The concept of this project is to make donations in a few clicks to Canadian charities.<br>
+            This site was made in a group.
+          </p>
+          <footer class="card-footer">
+            <span class="icon icon-html"><%= image_tag "html.svg" %></span>
+            <span class="icon icon-css"><%= image_tag "css.svg" %></span>
+            <span class="icon icon-javascript"><%= image_tag "js.svg" %></span>
+            <span class="icon icon-ruby"><%= image_tag "ruby.svg" %></span>
+            <span class="icon icon-rubyonrails"><%= image_tag "ruby-on-rails.svg" %></span>
+          </footer>
+        </div>
+        </a>
+      </div>
+
+
+      <div class="card">
+        <a href="https://carzy-joy.herokuapp.com/" target="_blank">
+
+        <header class="card_thumb">
+           <%= image_tag "carzy.png", class:"photo-work"%>
+        </header>
+        <div class="card_body">
+          <h3 class="card_title">
+            Carzy
+          </h3>
+          <div class="card_subtitle">
+            Renting a car
+          </div>
+          <p class="card_description">
+            Carzy is a rails application developed by groups of four.<br>The goal was to create a copy of the AirBnb website at the feature level.
+          </p>
+          <footer class="card-footer">
+            <span class="icon icon-html"><%= image_tag "html.svg" %></span>
+            <span class="icon icon-css"><%= image_tag "css.svg" %></span>
+            <span class="icon icon-javascript"><%= image_tag "js.svg" %></span>
+            <span class="icon icon-ruby"><%= image_tag "ruby.svg" %></span>
+            <span class="icon icon-rubyonrails"><%= image_tag "ruby-on-rails.svg" %></span>
+          </footer>
+        </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer-portfolio">
+  <div class="footer-icons">
+    <a href="https://www.linkedin.com/in/gaellelondoz" target="_blank" class="back-button"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://github.com/GaelleLondoz" target="_blank" class="back-button"><i class="fab fa-github"></i></a>
+  </div>
+</footer>
+
