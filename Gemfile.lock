@@ -41,7 +41,7 @@ GEM
     ffi (1.9.25)
     font-awesome-middleman (4.2.1)
       middleman-core (>= 3.0.0)
-    font-awesome-sass (5.0.13)
+    font-awesome-sass (5.2.0)
       sassc (>= 1.11)
     haml (5.0.4)
       temple (>= 0.8.0)
